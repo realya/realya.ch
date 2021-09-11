@@ -4,6 +4,9 @@
         <loc>https://realya.ch/Apple/Wallpaper.html</loc>
     </url>
     <url>
+        <loc>https://realya.ch/Microsoft/11.html</loc>
+    </url>
+    <url>
         <loc>https://realya.ch/404.html</loc>
     </url>
     <url>
@@ -20,5 +23,8 @@
     </url>
     <url>
         <loc>https://realya.ch/index.html</loc>
+    </url>
+    <url>
+        <loc>https://realya.ch/Microsoft.html</loc>
     </url>
 </urlset>

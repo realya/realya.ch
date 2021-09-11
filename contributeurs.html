@@ -24,13 +24,19 @@
 </head>
 
 <body style="background: rgba(255,255,255,0);">
-    <header style="border-style: solid;"><!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "9ec3a19ce95f4ab2b099f64be40777bc"}'></script><!-- End Cloudflare Web Analytics -->
+    <header style="border-style: solid;"><script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+  new Crate({
+    server: '711893126100418560',
+    channel: '711984938475585597',
+    color: '#303030',
+  })
+</script>
         <nav class="navbar navbar-light navbar-expand-xxl" style="background: #303030;">
             <div class="container-fluid"><img src="/assets/img/Logo/favicon.png" style="width: 40px;padding-right: 0px;margin-right: 10px;"><a class="navbar-brand" href="../index.html" style="font-weight: bold;color: rgb(228,27,35);padding-right: 6px;padding-left: 6px;padding-bottom: 6px;padding-top: 6px;">Realya</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navcol-1" style="padding-bottom: 8px;">
                     <div></div>
                     <ul class="navbar-nav mx-auto">
-                        <li class="nav-item" style="margin-right: 10px;"><a class="btn btn-outline-light" role="button" title="fcbdf" style="margin-top: 10px;margin-right: 10px;" href="../index.html">Accueil<i class="fas fa-gem" style="margin-left: 10px;"></i></a><button class="btn btn-outline-light" type="button" title="fcbdf" style="margin-top: 10px;margin-right: 10px;">Microsoft<i class="fab fa-microsoft" style="margin-left: 10px;"></i></button><a class="btn btn-outline-light" role="button" title="fcbdf" style="margin-top: 10px;margin-right: 10px;" href="../Apple.html">Apple<i class="fab fa-apple" style="margin-left: 10px;"></i></a><button class="btn btn-outline-light" type="button" title="fcbdf" style="margin-top: 10px;margin-right: 10px;">GNU/Linux<i class="fab fa-linux" style="margin-left: 10px;"></i></button><button class="btn btn-outline-light" type="button" title="fcbdf" style="margin-top: 10px;margin-right: 10px;">Virtualisation<i class="far fa-window-restore" style="margin-left: 10px;"></i></button><a class="btn btn-outline-light" role="button" title="fcbdf" style="margin-top: 10px;margin-right: 10px;" href="../about.html">À Propos<i class="far fa-id-badge" style="margin-left: 10px;"></i></a><a class="btn btn-outline-light" role="button" title="fcbdf" style="margin-top: 10px;margin-right: 10px;" href="../contributeurs.html">Contributeurs<i class="far fa-address-card" style="margin-left: 10px;"></i></a><a class="btn btn-outline-light" role="button" title="fcbdf" style="margin-top: 10px;margin-right: 10px;" href="https://docs.realya.ch" target="_blank">Documentations<i class="far fa-folder-open" style="margin-left: 10px;"></i></a><a class="btn btn-primary ms-auto" role="button" style="background: #7289da;margin-top: 10px;margin-right: 10px;" href="https://discord.realya.ch" target="_blank">Discord<i class="fab fa-discord" style="margin-left: 10px;"></i></a></li>
+                        <li class="nav-item" style="margin-right: 10px;"><a class="btn btn-outline-light" role="button" style="margin-top: 10px;margin-right: 10px;" href="../index.html">Accueil<i class="fas fa-gem" style="margin-left: 10px;"></i></a><a class="btn btn-outline-light" role="button" style="margin-top: 10px;margin-right: 10px;" href="../Microsoft.html">Microsoft<i class="fab fa-microsoft" style="margin-left: 10px;"></i></a><a class="btn btn-outline-light" role="button" style="margin-top: 10px;margin-right: 10px;" href="../Apple.html">Apple<i class="fab fa-apple" style="margin-left: 10px;"></i></a><button class="btn btn-outline-light disabled" type="button" style="margin-top: 10px;margin-right: 10px;" disabled="">GNU/Linux<i class="fab fa-linux" style="margin-left: 10px;"></i></button><button class="btn btn-outline-light disabled" type="button" style="margin-top: 10px;margin-right: 10px;" disabled="">Virtualisation<i class="far fa-window-restore" style="margin-left: 10px;"></i></button><a class="btn btn-outline-light" role="button" style="margin-top: 10px;margin-right: 10px;" href="../about.html">À Propos<i class="far fa-id-badge" style="margin-left: 10px;"></i></a><a class="btn btn-outline-light" role="button" style="margin-top: 10px;margin-right: 10px;" href="../contributeurs.html">Contributeurs<i class="far fa-address-card" style="margin-left: 10px;"></i></a><a class="btn btn-outline-light" role="button" style="margin-top: 10px;margin-right: 10px;" href="https://docs.realya.ch" target="_blank">Documentations<i class="far fa-folder-open" style="margin-left: 10px;"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -47,13 +53,15 @@
                     <div class="card-header py-3" style="background: rgba(255,255,255,0.1);">
                         <div class="row">
                             <div class="col align-self-center" id="creeper-user">
-                                <h6 class="text-center text-danger m-0 fw-bold" style="color: #e41b23;font-size: 27;">Chargement</h6>
+                                <h6 class="text-center text-danger m-0 fw-bold" style="font-size: 27px;">Chargement...</h6>
                             </div>
                             <div class="col text-center align-self-center" id="creeper-avatar"></div>
                         </div>
                     </div>
+                    <div class="card-body" id="creeper-desc">
+                        <p class="text-center m-0" style="color: rgb(255,255,255);"><br>Chargement de l'api...<br><br></p>
+                    </div>
                     <div class="card-body">
-                        <p class="text-center m-0" style="color: rgb(255,255,255);"><br>Creeper est le créateur de nos ISOs "2021", en effet les isos Windows 8.1 et 7 2021 sont des ISOs contenant toutes les mises jours jusqu'à nos jours.<br><br></p>
                         <div class="social-icons" style="background: rgba(255,255,255,0.05);padding-top: 5px;padding-bottom: 5px;border-style: solid;border-radius: 35px;"><a href="https://github.com/MichelBaie" style="margin-top: 5px;margin-bottom: 5px;color: rgb(13, 110, 253);" target="_blank"><i class="fab fa-github" style="color: rgb(48,113,228);border-color: rgb(48,113,228);"></i></a><a href="https://discord.bio/p/MichelBaie" style="margin-top: 5px;margin-bottom: 5px;color: rgb(13, 110, 253);" target="_blank"><i class="fab fa-discord" style="color: rgb(48,113,228);border-color: rgb(48,113,228);"></i></a><a href="https://www.youtube.com/channel/UC9igM_yQBymB1fb1GmIMNpQ?view_as=subscriber" style="margin-top: 5px;margin-bottom: 5px;color: rgb(13, 110, 253);" target="_blank"><i class="fab fa-youtube" style="color: rgb(48,113,228);border-color: rgb(48,113,228);"></i></a><a href="https://twitter.com/CreeperBaie" style="margin-top: 5px;margin-bottom: 5px;color: rgb(13, 110, 253);" target="_blank"><i class="fab fa-twitter" style="color: rgb(48,113,228);border-color: rgb(48,113,228);"></i></a></div>
                     </div>
                 </div>
@@ -62,10 +70,30 @@
                 <div class="card shadow mb-4" style="background: #303030;border-width: 2px;border-color: #e41b23;">
                     <div class="card-header py-3" style="background: rgba(255,255,255,0.1);">
                         <div class="row">
-                            <div class="col align-self-center">
-                                <h6 class="text-center text-danger m-0 fw-bold" style="color: #e41b23;font-size: 27;"><strong>Cole#1335</strong><br></h6>
+                            <div class="col align-self-center" id="valentindz-user">
+                                <h6 class="text-center text-danger m-0 fw-bold" style="color: #e41b23;font-size: 27px;">Chargement...</h6>
                             </div>
-                            <div class="col text-center align-self-center"><img class="border rounded-pill border-warning shadow-lg" src="/assets/img/Avatar/Cole.png" width="150px" style="margin-top: 10px;margin-bottom: 10px;filter: blur(0px);"></div>
+                            <div class="col text-center align-self-center" id="valentindz-avatar"></div>
+                        </div>
+                    </div>
+                    <div class="card-body" id="valentindz-desc">
+                        <p class="text-center m-0" style="color: rgb(255,255,255);"><br>Chargement de l'api...<br><br></p>
+                    </div>
+                    <div class="card-body">
+                        <div class="social-icons" style="background: rgba(255,255,255,0.05);padding-top: 5px;padding-bottom: 5px;border-style: solid;border-radius: 35px;"><a href="https://github.com/VoXaN24" style="margin-top: 5px;margin-bottom: 5px;color: rgb(13, 110, 253);" target="_blank"><i class="fab fa-github" style="color: rgb(48,113,228);border-color: rgb(48,113,228);"></i></a><a href="https://discord.bio/p/Valentindz" style="margin-top: 5px;margin-bottom: 5px;color: rgb(13, 110, 253);" target="_blank"><i class="fab fa-discord" style="color: rgb(48,113,228);border-color: rgb(48,113,228);"></i></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="margin-top: 10px;">
+        <div class="row align-items-center">
+            <div class="col" data-aos="zoom-in" data-aos-delay="100">
+                <div class="card shadow mb-4" style="background: #303030;border-width: 2px;border-color: #e41b23;">
+                    <div class="card-header py-3" style="background: rgba(255,255,255,0.1);">
+                        <div class="row">
+                            <div class="col align-self-center" style="text-align: center;"><span style="color: rgb(220,53,69);text-align: center;font-size: 27px;"><br><strong><span style="text-decoration: underline;">Cole#1335</span></strong><br></span></div>
+                            <div class="col text-center align-self-center"><img class="rounded-circle" src="/assets/img/Avatar/Cole.png" width="150px" style="margin-top: 10px;margin-bottom: 10px;filter: blur(0px);"></div>
                         </div>
                     </div>
                     <div class="card-body" style="max-height: 224px;">
@@ -172,9 +200,9 @@
                     <div class="card-body">
                         <div class="row align-items-center no-gutters">
                             <div class="col me-2">
-                                <div class="text-dark fw-bold h5 mb-0"><span style="color: var(--bs-light);">ImIveooo_#1557</span></div>
+                                <div class="text-dark fw-bold h5 mb-0"><span style="color: var(--bs-light);"><span style="text-decoration: underline;">ImIveooo_#1557</span></span></div>
                             </div>
-                            <div class="col-auto"><img src="/assets/img/Avatar/ImIveooo_.gif" style="width: 80px;border-radius: 50px;"></div>
+                            <div class="col-auto"><img class="rounded-circle" src="/assets/img/Avatar/ImIveooo_.gif" style="width: 80px;border-radius: 50px;"></div>
                         </div>
                     </div>
                 </div>
@@ -184,14 +212,14 @@
                     <div class="card-body">
                         <div class="row align-items-center no-gutters">
                             <div class="col me-2">
-                                <div class="text-dark fw-bold h5 mb-0"><span style="color: var(--bs-light);">Multi-Tâches#9627</span></div>
+                                <div class="text-dark fw-bold h5 mb-0"><span style="color: var(--bs-light);"><span style="text-decoration: underline;">Multi-Tâches#9627</span></span></div>
                             </div>
-                            <div class="col-auto"><img src="/assets/img/Avatar/Multi-Tâches.png" style="width: 80px;border-radius: 50px;"></div>
+                            <div class="col-auto"><img class="rounded-circle" src="/assets/img/Avatar/Multi-Tâches.png" style="width: 80px;border-radius: 50px;"></div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col" data-aos="zoom-in-up" style="padding-top: 10px;"><a href="https://discords.com/bio/p/lurnot3k" target="_blank">
+            <div class="col" data-aos="zoom-in-up" style="padding-top: 10px;"><a href="https://dsc.bio/lurnot3k" target="_blank">
                     <div class="card shadow border-start-success py-2" style="border-color: var(--bs-indigo);background: rgb(50,50,50);color: rgb(133,135,150);">
                         <div class="card-body">
                             <div class="row align-items-center no-gutters">
@@ -220,9 +248,9 @@
                     <div class="card-body">
                         <div class="row align-items-center no-gutters">
                             <div class="col me-2">
-                                <div class="text-dark fw-bold h5 mb-0"><span style="color: var(--bs-light);">Pierre.sh#5323</span></div>
+                                <div class="text-dark fw-bold h5 mb-0"><span style="color: var(--bs-light);"><span style="text-decoration: underline;">Pierre.sh#5323</span></span></div>
                             </div>
-                            <div class="col-auto"><img src="/assets/img/Avatar/Pierre.sh.png" style="width: 80px;border-radius: 50px;"></div>
+                            <div class="col-auto"><img class="rounded-circle" src="/assets/img/Avatar/Pierre.sh.png" style="width: 80px;border-radius: 50px;"></div>
                         </div>
                     </div>
                 </div>
@@ -232,25 +260,13 @@
                     <div class="card-body">
                         <div class="row align-items-center no-gutters">
                             <div class="col me-2">
-                                <div class="text-dark fw-bold h5 mb-0"><span style="color: var(--bs-light);">Clément#1093</span></div>
+                                <div class="text-dark fw-bold h5 mb-0"><span style="color: var(--bs-light);"><span style="text-decoration: underline;">Clément#1093</span></span></div>
                             </div>
-                            <div class="col-auto"><img src="/assets/img/Avatar/Clément.png" style="width: 80px;border-radius: 50px;"></div>
+                            <div class="col-auto"><img class="rounded-circle" src="/assets/img/Avatar/Clément.png" style="width: 80px;border-radius: 50px;"></div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col" data-aos="zoom-in-up" style="padding-top: 10px;"><a href="https://dsc.bio/valentindz" target="_blank">
-                    <div class="card shadow border-start-success py-2" style="border-color: var(--bs-indigo);background: rgb(50,50,50);color: rgb(133,135,150);">
-                        <div class="card-body">
-                            <div class="row align-items-center no-gutters">
-                                <div class="col me-2">
-                                    <div class="text-dark fw-bold h5 mb-0" id="valentindz-user"><span style="color: var(--bs-light);"><br><strong>Chargement...</strong><br><br></span></div>
-                                </div>
-                                <div class="col-auto" id="valentindz-avatar"></div>
-                            </div>
-                        </div>
-                    </div>
-                </a></div>
             <div class="col" data-aos="zoom-in-up" style="padding-top: 10px;"><a href="https://dsc.bio/slewes" target="_blank">
                     <div class="card shadow border-start-success py-2" style="border-color: var(--bs-indigo);background: rgb(50,50,50);color: rgb(133,135,150);">
                         <div class="card-body">
